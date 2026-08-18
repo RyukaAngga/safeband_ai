@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Almarai', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+  color: #e1e0cc;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #000; }
+::-webkit-scrollbar-thumb { background: #222; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #333; }
+
+/* Hero noise overlay */
+.noise-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 300px 300px;
+}
+
+/* Features section background noise */
+.bg-noise {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='250' height='250' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 250px 250px;
+  pointer-events: none;
+}
+
+/* Band glow effect */
+.band-glow-cream {
+  filter: drop-shadow(0 0 24px rgba(222,219,200,0.18)) drop-shadow(0 0 8px rgba(222,219,200,0.10));
+}
+.band-glow-red {
+  filter: drop-shadow(0 0 24px rgba(239,68,68,0.35)) drop-shadow(0 0 8px rgba(239,68,68,0.20));
+}
+.band-glow-blue {
+  filter: drop-shadow(0 0 24px rgba(96,165,250,0.30)) drop-shadow(0 0 8px rgba(96,165,250,0.15));
+}
+.band-glow-green {
+  filter: drop-shadow(0 0 24px rgba(74,222,128,0.25)) drop-shadow(0 0 8px rgba(74,222,128,0.12));
+}
+.band-glow-orange {
+  filter: drop-shadow(0 0 24px rgba(251,146,60,0.30)) drop-shadow(0 0 8px rgba(251,146,60,0.15));
+}
+
+/* Hold button progress */
+.hold-progress-bar {
+  transition: width 0.1s linear;
+}
+
+/* Prevent text selection during interaction */
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+}
