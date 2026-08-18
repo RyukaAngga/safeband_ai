@@ -1,10 +1,12 @@
+<div align="center">
+
 # SafeBand AI — Smart Wearable Assistant & Safety Companion
 
 🌐 **Live Demo Website:** [https://safebandai.netlify.app](https://safebandai.netlify.app)
 
 ---
 
-## 🛠️ Tech Stack & Hardware Specs
+### 🛠️ Tech Stack & Hardware Specs
 
 ![React](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-5.3-646CFF?style=for-the-badge&logo=vite&logoColor=white)
@@ -17,6 +19,8 @@
 ![Bluetooth LE](https://img.shields.io/badge/BLE-5.0_Ultra_Low_Power-0082FC?style=for-the-badge&logo=bluetooth&logoColor=white)
 
 ---
+
+</div>
 
 ## 📖 Deskripsi Proyek
 
